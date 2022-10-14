@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\Data\" />
+    <Folder Include="Model\" />
+    <Folder Include="Services\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Model\" />
+    <None Remove="Services\" />
+    <None Remove="Controllers\" />
+  </ItemGroup>
+</Project>
